@@ -1,0 +1,32 @@
+{
+  "name": "react-anim-line-graph",
+  "version": "0.0.1",
+  "description": "React component for displaying streaming data in line graph form",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benjanes/react-anim-line-graph.git"
+  },
+  "scripts": {
+    "lint": "eslint src/",
+    "build-pkg": "rm -rf dist && mkdir -p dist && webpack"
+  },
+  "author": "Ben Janes",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "0.14.x || ^15.0.0",
+    "react-dom": "0.14.x || ^15.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.2.3",
+    "eslint-plugin-react": "^5.1.1",
+    "webpack": "^1.13.1"
+  }
+}
