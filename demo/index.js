@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Graph } from '../dist';
+import { AnimLineGraph } from '../dist';
 
 const rootNode = document.getElementById('root');
 
-ReactDOM.render(<Graph />, rootNode);
+ReactDOM.render(<AnimLineGraph />, rootNode);

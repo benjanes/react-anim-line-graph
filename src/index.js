@@ -1,3 +1,3 @@
-import { Graph } from './components/Graph';
+import { Graph as AnimLineGraph } from './components/Graph';
 
-export { Graph }
+export { AnimLineGraph }
