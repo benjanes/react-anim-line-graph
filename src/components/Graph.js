@@ -6,8 +6,12 @@ export class Graph extends Component {
     return (
       <div>
         {/* render the graph */}
-        {/* within graph container, render this.props.children */}
-        <h1>Insert Graph</h1>
+        <div className="anim-line-graph--container">
+          <h1>Insert graph here</h1>
+
+          {/* within graph container, render this.props.children */}
+          {this.props.children}
+        </div>
       </div>
     );
   }

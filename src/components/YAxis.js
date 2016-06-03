@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
-export default class YAxis extends Component {
+export class YAxis extends Component {
 
   render() {
-    <div>
-      
-    </div>
+    return (
+      <div>
+        <h2>Y Axis</h2>
+      </div>
+    )
   }
 }

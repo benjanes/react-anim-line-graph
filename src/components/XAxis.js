@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
-export default class XAxis extends Component {
+export class XAxis extends Component {
 
   render() {
-    <div>
-      
-    </div>
+    return (
+      <div>
+        <h2>X Axis</h2>
+      </div>
+    )
   }
 }
