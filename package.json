@@ -9,7 +9,9 @@
   },
   "scripts": {
     "lint": "eslint src/",
-    "build-pkg": "rm -rf dist && mkdir -p dist && webpack"
+    "build-pkg": "rm -rf dist && mkdir -p dist && babel src -d dist",
+    "build-demo": "rm -rf demo && mkdir -p demo && webpack ./demo.js demo/demo.js",
+    "build": "npm run build-pkg && npm run build-demo"
   },
   "author": "Ben Janes",
   "license": "ISC",
@@ -18,9 +20,12 @@
     "react-dom": "0.14.x || ^15.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.9.0",
     "babel-core": "^6.9.0",
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-es2015": "^6.9.0",
     "eslint": "^2.11.1",
     "eslint-config-airbnb": "^9.0.1",
