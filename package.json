@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint src/",
     "build-pkg": "rm -rf dist && mkdir -p dist && babel src -d dist",
-    "build-demo": "rm -rf demo && mkdir -p demo && webpack ./demo.js demo/demo.js",
+    "build-demo": "rm demo/demo.js && webpack demo/index.js demo/demo.js",
     "build": "npm run build-pkg && npm run build-demo"
   },
   "author": "Ben Janes",
